@@ -27,7 +27,7 @@ An AVL Tree is a self-balancing Binary Search Tree where the difference between 
 - Display all student records (sorted order)  
 - Automatic tree balancing (AVL rotations)  
 
-## 🏗️ Project Structure
+## Project Structure
 
 src/  
 └── com.assignment.trees/  
