@@ -13,7 +13,8 @@ public class MainApp {
             System.out.println("\n1. Insert Student");
             System.out.println("2. Search Student");
             System.out.println("3. Display All");
-            System.out.println("4. Exit");
+            System.out.println("4. Delete Student");
+            System.out.println("5. Exit");
 
             int choice = sc.nextInt();
 
@@ -48,8 +49,15 @@ public class MainApp {
                 case 3:
                     tree.display();
                     break;
-
+                    
                 case 4:
+                    System.out.print("Enter ID to delete: ");
+                    int deleteId = sc.nextInt();
+                    tree.delete(deleteId);
+                    System.out.println("Student deleted.");
+                    break;
+
+                case 5:
                 	sc.close();
                     System.exit(0);
             }
